@@ -1,8 +1,8 @@
 Связанные репозитории:
-* https://github.com/bititanb/CI-CD-pipeline
-* https://github.com/bititanb/taskmngr
+* https://github.com/ilya-lesikov/CI-CD-pipeline
+* https://github.com/ilya-lesikov/taskmngr
 
-# Ansible playbooks для [CI-CD-pipeline](https://github.com/bititanb/CI-CD-pipeline)
+# Ansible playbooks для [CI-CD-pipeline](https://github.com/ilya-lesikov/CI-CD-pipeline)
 
 ## Краткий обзор
 Ansible используется для развертывания инфраструктуры и деплоя самого приложения.  
@@ -22,7 +22,7 @@ Ansible используется для развертывания инфрас�
 * Приложение (testing)
 
 ## Подготовка
-> Подготовку можно пропустить, если разворачивать, используя [Vagrant/Virtualbox](https://github.com/bititanb/CI-CD-pipeline#Быстрый-старт-с-vagrantvirtualbox) (рекомендуется) или [Packer/KVM](https://github.com/bititanb/CI-CD-pipeline/tree/master/packer#Развертывание-с-packerkvm).
+> Подготовку можно пропустить, если разворачивать, используя [Vagrant/Virtualbox](https://github.com/ilya-lesikov/CI-CD-pipeline#Быстрый-старт-с-vagrantvirtualbox) (рекомендуется) или [Packer/KVM](https://github.com/ilya-lesikov/CI-CD-pipeline/tree/master/packer#Развертывание-с-packerkvm).
 
 ### Зависимости
 * Ansible 2.3.2+
@@ -53,7 +53,7 @@ ansible-playbook -e kube_master_ip="${MASTER_IP}" /etc/ansible/taskmngr.yaml
 ```
 ### Приложениe
 
-Во время развертывания инфраструктуры развертывается и Jenkins, который вытягивает репозиторий с приложением и собирает приложение, используя роль *taskmngr-kubernetes* [(более подробно здесь)](https://github.com/bititanb/ansible-taskmngr/tree/master/roles/taskmngr-kubernetes#ansible-%D1%80%D0%BE%D0%BB%D1%8C-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D0%B8-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B4%D0%B5%D0%BF%D0%BB%D0%BE%D1%8F-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
+Во время развертывания инфраструктуры развертывается и Jenkins, который вытягивает репозиторий с приложением и собирает приложение, используя роль *taskmngr-kubernetes* [(более подробно здесь)](https://github.com/ilya-lesikov/ansible-taskmngr/tree/master/roles/taskmngr-kubernetes#ansible-%D1%80%D0%BE%D0%BB%D1%8C-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D0%B8-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B4%D0%B5%D0%BF%D0%BB%D0%BE%D1%8F-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
 
 ### Дополнительные флаги
 Для многих ролей доступны флаги для форсированного переразвертывания. Имеют общий префикс "*force_*". Найти можно так:

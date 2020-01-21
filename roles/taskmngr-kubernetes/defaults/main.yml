@@ -15,7 +15,7 @@ force_testing_app: false
 force_prod_app: false
 # end-sample
 
-app_git: "https://github.com/bititanb/taskmngr"
+app_git: "https://github.com/ilya-lesikov/taskmngr"
 app_repo_local_path: "/tmp/taskmngr-django"
 app_dockerfile_path: "{{ app_repo_local_path }}"
 app_django_path: "{{ app_repo_local_path }}"

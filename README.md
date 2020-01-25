@@ -1,16 +1,16 @@
 ---
 
 ### 2020 UPDATE:
-This was done back in 2017 as part of the [CI/CD demo](https://github.com/search?q=user:ilya-lesikov+topic:ci-cd-pipeline+fork:true&type=Repositories), before looking for a job as a Junior Automation Engineer. \
+This was done back in 2017 as a part of the [CI/CD demo](https://github.com/search?q=user:ilya-lesikov+topic:ci-cd-pipeline+fork:true&type=Repositories), before looking for a job as a Junior Automation Engineer. \
 Now unmantained and left here for purely historical purposes.
 
 ---
 
-Связанные репозитории:
+Other repositories that are part of this demo:
 * https://github.com/ilya-lesikov/CI-CD-pipeline
 * https://github.com/ilya-lesikov/taskmngr
 
-# Ansible playbooks для [CI-CD-pipeline](https://github.com/ilya-lesikov/CI-CD-pipeline)
+# Ansible playbooks for [CI-CD-pipeline](https://github.com/ilya-lesikov/CI-CD-pipeline)
 
 ## Краткий обзор
 Ansible используется для развертывания инфраструктуры и деплоя самого приложения.  
